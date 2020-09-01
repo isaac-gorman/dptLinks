@@ -5,16 +5,18 @@ import StudyLinksData from "./Data/StudyLinksData";
 const Container = styled.div`
   width: 100%;
   height: 60%;
+  margin-top: 60px;
 
   // background: purple;
 `;
 const Heading = styled.h3`
-  font-size: 16px;
+  font-size: 20px;
+  margin-left: 6px;
 `;
 const CarouselConatiner = styled.div`
   width: 100%;
   height: 90%;
-  background: red;
+  // background: red;
   overflow: hidden;
   white-space: nowrap;
   margin: 0 auto;
@@ -25,7 +27,7 @@ const Track = styled.div`
   display: flex;
   overflow-x: scroll;
 
-  background: green;
+  // background: green;
   &::-webkit-scrollbar {
     -webkit-appearance: none;
     background: transparent;
@@ -36,7 +38,7 @@ const LinksDivA = styled.div`
   width: 290px;
   height: 100%;
   flex-shrink: 0;
-  background: yellow;
+  // background: yellow;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -46,7 +48,7 @@ const LinksDivB = styled.div`
   height: 100%;
   flex-shrink: 0;
 
-  background: orange;
+  // background: orange;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -57,23 +59,23 @@ const LinkCard = styled.div`
   height: 60px;
   margin-top: 14px;
   margin-bottom: 14px;
-  background: grey;
+  // background: grey;
   display: flex;
   // justify-content: center;
   align-items: center;
 `;
 
 const Icon = styled.img`
-  width: 50px;
-  height: 50px;
-  background: pink;
+  width: 60px;
+  height: 60px;
+  // background: pink;
   margin-left: 6px;
 `;
 
 const SubjectDiv = styled.div`
   width: 70%;
   height: 50px;
-  background: red;
+  // background: red;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -81,13 +83,13 @@ const SubjectDiv = styled.div`
 `;
 
 const Title = styled.h4`
-  font-size: 14px;
+  font-size: 18px;
   margin-top: 0px;
   margin-bottom: 0px;
 `;
 
 const Destination = styled.p`
-  font-size: 12px;
+  font-size: 16px;
   margin-top: 0px;
   margin-bottom: 0px;
 `;
