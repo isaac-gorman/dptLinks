@@ -28,6 +28,12 @@ const SectionA = styled.div`
   flex-direction: column;
   align-items: center;
   // justify-content: center;
+
+  @media (min-width: 1152px) {
+    align-items: flex-start;
+    // background: pink;
+    width: 60%;
+  }
 `;
 const SectionB = styled.div`
   // width: 100%;

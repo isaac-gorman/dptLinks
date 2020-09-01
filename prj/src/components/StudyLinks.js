@@ -10,7 +10,7 @@ const Container = styled.div`
   // background: purple;
 `;
 const Heading = styled.h3`
-  font-size: 20px;
+  font-size: 18px;
   margin-left: 6px;
 `;
 const CarouselConatiner = styled.div`
@@ -20,6 +20,11 @@ const CarouselConatiner = styled.div`
   overflow: hidden;
   white-space: nowrap;
   margin: 0 auto;
+
+  @media (min-width: 1152px) {
+    overflow: none;
+    white-space: none;
+  }
 `;
 const Track = styled.div`
   width: 100%;
@@ -33,6 +38,10 @@ const Track = styled.div`
     background: transparent;
     width: 0px;
   }
+
+  @media (min-width: 1152px) {
+    overflow-x: auto;
+  }
 `;
 const LinksDivA = styled.div`
   width: 290px;
@@ -42,17 +51,25 @@ const LinksDivA = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: center;
-`;
-const LinksDivB = styled.div`
-  width: 400px;
-  height: 100%;
-  flex-shrink: 0;
 
-  // background: orange;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
+  @media (min-width: 1152px) {
+    width: 240px;
+  }
 `;
+// const LinksDivB = styled.div`
+//   width: 400px;
+//   height: 100%;
+//   flex-shrink: 0;
+
+//   // background: orange;
+//   display: flex;
+//   flex-direction: column;
+//   justify-content: center;
+
+//   @media (min-width: 1152px) {
+//     width: 100px;
+//   }
+// `;
 
 const LinkCard = styled.div`
   width: 250px;
@@ -63,6 +80,11 @@ const LinkCard = styled.div`
   display: flex;
   // justify-content: center;
   align-items: center;
+
+  @media (min-width: 1152px) {
+    margin-right: 0px;
+    width: 100px;
+  }
 `;
 
 const Icon = styled.img`
@@ -83,13 +105,13 @@ const SubjectDiv = styled.div`
 `;
 
 const Title = styled.h4`
-  font-size: 18px;
+  font-size: 14px;
   margin-top: 0px;
   margin-bottom: 0px;
 `;
 
 const Destination = styled.p`
-  font-size: 16px;
+  font-size: 12px;
   margin-top: 0px;
   margin-bottom: 0px;
 `;
@@ -101,7 +123,7 @@ function StudyLinks() {
         <Track>
           <LinksDivA>
             {/* .slice(0, 3) */}
-            {StudyLinksData.slice(0, 3).map((item) => {
+            {StudyLinksData.slice(0, 2).map((item) => {
               return (
                 <LinkCard key={item.id}>
                   <Icon src={item.image} alt="item" />
@@ -113,8 +135,8 @@ function StudyLinks() {
               );
             })}
           </LinksDivA>
-          <LinksDivB>
-            {StudyLinksData.slice(3).map((item) => {
+          <LinksDivA>
+            {StudyLinksData.slice(2, 4).map((item) => {
               return (
                 <LinkCard key={item.id}>
                   <Icon src={item.image} alt="item" />
@@ -125,7 +147,20 @@ function StudyLinks() {
                 </LinkCard>
               );
             })}
-          </LinksDivB>
+          </LinksDivA>
+          <LinksDivA>
+            {StudyLinksData.slice(4).map((item) => {
+              return (
+                <LinkCard key={item.id}>
+                  <Icon src={item.image} alt="item" />
+                  <SubjectDiv>
+                    <Title>{item.title}</Title>
+                    <Destination>{item.destination}</Destination>
+                  </SubjectDiv>
+                </LinkCard>
+              );
+            })}
+          </LinksDivA>
         </Track>
       </CarouselConatiner>
     </Container>

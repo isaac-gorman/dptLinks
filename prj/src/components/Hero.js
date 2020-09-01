@@ -13,7 +13,7 @@ const HeroContainer = styled.div`
   border-radius: 20px;
 
   @media (min-width: 768px) {
-    width: 680px;
+    width: 100%;
     height: 300px;
   } ;
 `;
