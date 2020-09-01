@@ -3,6 +3,7 @@ import styled from "styled-components";
 import Header from "./Header";
 import Hero from "./Hero";
 import StudyLinks from "./StudyLinks";
+import ClassArchive from "./ClassArchive";
 
 const ResponsiveSection = styled.div`
   width: 96vw;
@@ -32,18 +33,31 @@ const SectionA = styled.div`
   @media (min-width: 1152px) {
     align-items: flex-start;
     // background: pink;
-    width: 60%;
+    width: 60vw;
   }
 `;
 const SectionB = styled.div`
-  // width: 100%;
+  width: 100%;
+  height: 600px;
   // margin: 0 auto;
-  // height: 100%;
-  background: lightblue;
+
+  // background: lightblue;
   display: flex;
   flex-direction: column;
   align-items: center;
   // justify-content: center;
+
+  @media (min-width: 768px) {
+    width: 100%;
+    background: grey;
+    flex-direction: row;
+    justify-content: flex-start;
+  }
+
+  @media (min-width: 1152px) {
+    // width: 65%;
+    background: grey;
+  } ;
 `;
 
 function Wrapper() {
@@ -55,7 +69,9 @@ function Wrapper() {
           <Hero />
           <StudyLinks />
         </SectionA>
-        <SectionB></SectionB>
+        <SectionB>
+          <ClassArchive />
+        </SectionB>
       </ResponsiveSection>
     </>
   );

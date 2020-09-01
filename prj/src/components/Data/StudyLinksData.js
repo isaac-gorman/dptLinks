@@ -25,7 +25,7 @@ const StudyLinksData = [
     id: 5,
     title: "Lecture Recordings",
     image: LR,
-    destination: "Google Drive",
+    destination: "Microsoft Teams",
   },
 ];
 

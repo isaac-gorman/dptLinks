@@ -11,7 +11,8 @@ const Container = styled.div`
 `;
 const Heading = styled.h3`
   font-size: 18px;
-  margin-left: 6px;
+  width: 90%;
+  margin: 0 auto;
 `;
 const CarouselConatiner = styled.div`
   width: 100%;
@@ -56,20 +57,6 @@ const LinksDivA = styled.div`
     width: 240px;
   }
 `;
-// const LinksDivB = styled.div`
-//   width: 400px;
-//   height: 100%;
-//   flex-shrink: 0;
-
-//   // background: orange;
-//   display: flex;
-//   flex-direction: column;
-//   justify-content: center;
-
-//   @media (min-width: 1152px) {
-//     width: 100px;
-//   }
-// `;
 
 const LinkCard = styled.div`
   width: 250px;
