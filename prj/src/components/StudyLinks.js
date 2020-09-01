@@ -33,11 +33,13 @@ const Track = styled.div`
   }
 `;
 const LinksDivA = styled.div`
-  width: 400px;
+  width: 290px;
   height: 100%;
   flex-shrink: 0;
-
   background: yellow;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 `;
 const LinksDivB = styled.div`
   width: 400px;
@@ -45,11 +47,16 @@ const LinksDivB = styled.div`
   flex-shrink: 0;
 
   background: orange;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 `;
 
 const LinkCard = styled.div`
-  width: 240px;
-  height: 55px;
+  width: 250px;
+  height: 60px;
+  margin-top: 14px;
+  margin-bottom: 14px;
   background: grey;
   display: flex;
   // justify-content: center;
