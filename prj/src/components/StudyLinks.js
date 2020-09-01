@@ -5,7 +5,7 @@ const Container = styled.div`
   width: 100%;
   height: 60%;
 
-  background: purple;
+  // background: purple;
 `;
 
 const Heading = styled.h3`

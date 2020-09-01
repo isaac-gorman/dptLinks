@@ -5,7 +5,7 @@ const HeaderContainer = styled.div`
   width: 96vw;
   margin: 0 auto;
   height: 80px;
-  background: #e5e5e5;
+  // background: #e5e5e5;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -25,7 +25,7 @@ const Logo = styled.h3`
 function Header() {
   return (
     <HeaderContainer>
-      <Logo>dpt23</Logo>
+      <Logo>dptLinks23</Logo>
     </HeaderContainer>
   );
 }

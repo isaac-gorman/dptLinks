@@ -6,15 +6,15 @@ import styled from "styled-components";
 import fc from "./fc.svg";
 
 const HeroContainer = styled.div`
-  width: 90%;
-  height: 40%;
+  width: 95%;
+  height: 50%;
 
   background: white;
   border-radius: 20px;
 
   @media (min-width: 768px) {
     width: 680px;
-    height: 230px;
+    height: 300px;
   } ;
 `;
 
@@ -22,24 +22,51 @@ const HeroImage = styled.img`
   width: 100%;
   height: 100%;
   object-fit: cover;
-  opacity: 0.8;
+  opacity: 0.5;
   border-radius: 20px;
 `;
 
 const Heading = styled.h3`
-  font-size: 18px;
+  font-size: 24px;
+  margin-bottom: 0;
+  margin-top: 20px;
+  position: relative;
+  top: -300px;
+  left: 24px;
+  color: black;
+  width: 80%;
+  font-weight: bold;
+
+  @media (min-width: 768px) {
+    top: -280px;
+    left: 42px;
+    font-size: 32px;
+    width: 50%;
+  } ;
 `;
 
 const Description = styled.p`
-  font-size: 12px;
+  font-size: 16px;
+  position: relative;
+  top: -160px;
+  left: 24px;
+  color: black;
+  width: 90%;
+  // font-weight: bold;
+
+  @media (min-width: 768px) {
+    top: -220px;
+    left: 42px;
+    font-size: 18px;
+    width: 40%;
+  } ;
 `;
 
 function Hero() {
   return (
     <HeroContainer>
       <HeroImage src={fc} alt="file cabinet" />
-      {/* <img src={logo} className="App-logo" alt="logo" /> */}
-      <Heading>All the links in one place</Heading>
+      <Heading>A file cabinet for school links</Heading>
       <Description>
         Find lab videos, to student made study material all in one place.
       </Description>
