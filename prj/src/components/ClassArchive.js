@@ -42,7 +42,7 @@ const Heading = styled.h3`
 
 const Card = styled.div`
   width: 90%;
-  height: 380px;
+  height: 460px;
   background: white;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   border-radius: 10px;
@@ -107,10 +107,43 @@ const Description = styled.p`
   // margin-bottom: 0px;
 `;
 
+const AppLink = styled.a`
+  text-decoration: none;
+  color: black;
+  // &:hover {
+  //   color: #9ab8e9;
+  // }
+  // &:active {
+  //   color: #4285f4;
+  // }
+`;
+
+const Button = styled.button`
+  width: 100%;
+  font-size: 12px;
+  font-family: "airbnb_cereal_appmedium";
+  font-style: normal;
+  text-decoration: none;
+  color: white;
+  background: #4285f4;
+  padding: 12px;
+  border: none;
+  border-radius: 6px;
+
+  &:hover {
+    background: #9ab8e9;
+  }
+  &:active {
+    background: #144ba6;
+  }
+`;
+
 function ClassArchive() {
   return (
     <Container>
       <Heading>Class Archive</Heading>
+      <AppLink></AppLink>
+
       <Card>
         <ImageContainer>
           <Image src={CA} alt />
@@ -122,6 +155,10 @@ function ClassArchive() {
             Upload any content that you capture in and out of the classroom, for
             our class graduation slideshow.
           </Description>
+
+          <AppLink href="https://www.google.com/drive/" target="_blank">
+            <Button>Go to Archive</Button>
+          </AppLink>
         </TextDiv>
       </Card>
     </Container>

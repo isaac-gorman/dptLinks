@@ -109,49 +109,66 @@ const Destination = styled.p`
   margin-top: 0px;
   margin-bottom: 0px;
 `;
+
+const AppLink = styled.a`
+  text-decoration: none;
+  color: black;
+  &:hover {
+    color: #9ab8e9;
+  }
+  &:active {
+    color: #4285f4;
+  }
+`;
 function StudyLinks() {
   return (
     <Container>
-      <Heading>Study Links</Heading>
+      <Heading>Study Links</Heading>{" "}
       <CarouselConatiner>
         <Track>
           <LinksDivA>
             {/* .slice(0, 3) */}
             {StudyLinksData.slice(0, 2).map((item) => {
               return (
-                <LinkCard key={item.id}>
-                  <Icon src={item.image} alt="item" />
-                  <SubjectDiv>
-                    <Title>{item.title}</Title>
-                    <Destination>{item.destination}</Destination>
-                  </SubjectDiv>
-                </LinkCard>
+                <AppLink href={item.url} target="_blank">
+                  <LinkCard key={item.id}>
+                    <Icon src={item.image} alt="item" />
+                    <SubjectDiv>
+                      <Title>{item.title}</Title>
+                      <Destination>{item.destination}</Destination>
+                    </SubjectDiv>
+                  </LinkCard>
+                </AppLink>
               );
             })}
           </LinksDivA>
           <LinksDivA>
             {StudyLinksData.slice(2, 4).map((item) => {
               return (
-                <LinkCard key={item.id}>
-                  <Icon src={item.image} alt="item" />
-                  <SubjectDiv>
-                    <Title>{item.title}</Title>
-                    <Destination>{item.destination}</Destination>
-                  </SubjectDiv>
-                </LinkCard>
+                <AppLink href={item.url} target="_blank">
+                  <LinkCard key={item.id}>
+                    <Icon src={item.image} alt="item" />
+                    <SubjectDiv>
+                      <Title>{item.title}</Title>
+                      <Destination>{item.destination}</Destination>
+                    </SubjectDiv>
+                  </LinkCard>
+                </AppLink>
               );
             })}
           </LinksDivA>
           <LinksDivA>
             {StudyLinksData.slice(4).map((item) => {
               return (
-                <LinkCard key={item.id}>
-                  <Icon src={item.image} alt="item" />
-                  <SubjectDiv>
-                    <Title>{item.title}</Title>
-                    <Destination>{item.destination}</Destination>
-                  </SubjectDiv>
-                </LinkCard>
+                <AppLink href={item.url} target="_blank">
+                  <LinkCard key={item.id}>
+                    <Icon src={item.image} alt="item" />
+                    <SubjectDiv>
+                      <Title>{item.title}</Title>
+                      <Destination>{item.destination}</Destination>
+                    </SubjectDiv>
+                  </LinkCard>
+                </AppLink>
               );
             })}
           </LinksDivA>

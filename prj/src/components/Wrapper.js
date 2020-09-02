@@ -80,6 +80,16 @@ const SectionB = styled.div`
     justify-content: flex-start;
   }
 
+  @media (min-width: 800px) {
+    // width: 100%;
+    margin-top: 200px;
+    margin-bottom: 200px;
+    // height: 40vh;
+    // background: grey;
+    flex-direction: row;
+    justify-content: flex-start;
+  }
+
   @media (min-width: 1152px) {
     // width: 65%;
     // background: grey;
