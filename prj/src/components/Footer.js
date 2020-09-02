@@ -89,6 +89,12 @@ const SocialDiv = styled.div`
 const FBIcon = styled.img`
   width: 20px;
   height: 20px;
+  fill: #9ab8e9;
+  &:hover {
+    border-radius: 20px;
+    background: #4285f4;
+    // fill: #9ab8e9;
+  }
 
   @media (min-height: 800px) {
     width: 30px;
@@ -98,11 +104,27 @@ const FBIcon = styled.img`
 const IGIcon = styled.img`
   width: 20px;
   height: 20px;
+  &:hover {
+    border-radius: 20px;
+    background: #4285f4;
+    // fill: #9ab8e9;
+  }
 
   @media (min-height: 800px) {
     width: 30px;
     height: 30px;
   }
+`;
+
+const AppLink = styled.a`
+  text-decoration: none;
+  color: black;
+  // &:hover {
+  //   color: #9ab8e9;
+  // }
+  // &:active {
+  //   color: #4285f4;
+  // }
 `;
 
 function Footer() {
@@ -115,8 +137,13 @@ function Footer() {
           </Logo>
         </LogoDiv>
         <SocialDiv>
-          <FBIcon src={FB} alt="Facebook icon" />
-          <IGIcon src={IG} alt="Instagram icon" />
+          <AppLink href="https://www.facebook.com/" target="_blank">
+            <FBIcon src={FB} alt="Facebook icon" />
+          </AppLink>
+
+          <AppLink href="https://www.instagram.com/" target="_blank">
+            <IGIcon src={IG} alt="Instagram icon" />
+          </AppLink>
         </SocialDiv>
       </ContentDiv>
     </Container>

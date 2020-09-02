@@ -7,7 +7,7 @@ const Container = styled.div`
   height: 400px;
   margin: 0 auto;
   margin-top: 60px;
-  margin-bottom: 60px;
+  margin-bottom: 100px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -73,7 +73,7 @@ const TextDiv = styled.div`
 `;
 
 const Title = styled.h3`
-  font-size: 16px;
+  font-size: 14px;
   font-family: "airbnb_cereal_appbook";
   font-style: normal;
   // font-weight: normal;
@@ -84,7 +84,7 @@ const Title = styled.h3`
   margin-bottom: 0px;
 `;
 const LinkDestination = styled.p`
-  font-size: 16px;
+  font-size: 14px;
   font-family: "airbnb_cereal_appbook";
   font-style: normal;
   font-weight: normal;
@@ -96,7 +96,7 @@ const LinkDestination = styled.p`
 `;
 
 const Description = styled.p`
-  font-size: 16px;
+  font-size: 14px;
   font-family: "airbnb_cereal_appbook";
   font-style: normal;
   font-weight: normal;
