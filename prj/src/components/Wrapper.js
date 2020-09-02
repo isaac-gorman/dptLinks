@@ -23,7 +23,7 @@ const ResponsiveSection = styled.div`
   width: 96vw;
   margin: 0 auto;
   // height: 100%;
-  background: green;
+  // background: green;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -37,7 +37,7 @@ const SectionA = styled.div`
   width: 100%;
   // margin: 0 auto;
   height: 50%;
-  background: pink;
+  // background: pink;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -64,26 +64,31 @@ const SectionB = styled.div`
   height: 50%;
   // margin: 0 auto;
 
-  background: lightblue;
+  // background: lightblue;
   display: flex;
   flex-direction: column;
   align-items: center;
   // justify-content: center;
 
   @media (min-width: 768px) {
-    width: 100%;
-    background: grey;
+    // width: 100%;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    height: 40vh;
+    // background: grey;
     flex-direction: row;
     justify-content: flex-start;
   }
 
   @media (min-width: 1152px) {
     // width: 65%;
-    background: grey;
+    // background: grey;
     flex-direction: column;
     overflow: hidden;
     overflow-y: scroll;
     height: 600px;
+    margin-top: 0px;
+    margin-bottom: 0px;
   }
 
   @media (min-width: 1280px) {

@@ -2,20 +2,25 @@ import React from "react";
 import styled from "styled-components";
 
 const HeaderContainer = styled.div`
-  width: 96vw;
+  width: 100vw;
   margin: 0 auto;
   height: 60px;
   // background: #e5e5e5;
   display: flex;
   flex-direction: column;
   justify-content: center;
+  border-bottom: 0.1px solid #e6e6e6;
 
   @media (min-width: 1152px) {
     text-align: left;
     font-size: 14px;
     // height: 80px;
-    background: #e5e5e5;
+    // background: #e5e5e5;
     margin-bottom: 0px;
+  }
+
+  @media (min-width: 768px) {
+    height: 60px;
   }
 
   @media (min-height: 800px) {
@@ -34,7 +39,7 @@ const Logo = styled.p`
 
   @media (min-width: 1152px) {
     text-align: center;
-    font-size: 20px;
+    font-size: 16px;
   }
 `;
 

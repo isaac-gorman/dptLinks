@@ -14,13 +14,16 @@ const Container = styled.div`
 
   @media (min-width: 768px) {
     width: 50%;
-    background: pink;
+    // background: pink;
     align-items: flex-start;
+
+    // margin-top: 20px;
+    // margin-bottom: 20px;
   }
 
   @media (min-width: 1152px) {
     width: 65%;
-    background: blue;
+    // background: blue;
     margin-top: 0px;
     align-items: center;
   } ;

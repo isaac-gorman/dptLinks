@@ -7,23 +7,25 @@ const Container = styled.div`
   width: 100%;
   height: 400px;
   margin: 0 auto;
-  // margin-top: 60px;
+  margin-top: 60px;
   margin-bottom: 60px;
   display: flex;
   flex-direction: column;
   align-items: center;
-  background: blue;
+  // background: blue;
   // align-items: flex-end;
 
   @media (min-width: 768px) {
     width: 50%;
-    background: green;
+    // background: green;
     align-items: flex-end;
+    // margin-top: 20px;
+    // margin-bottom: 20px;
   }
 
   @media (min-width: 1152px) {
     width: 65%;
-    background: blue;
+    // background: blue;
     margin-top: 0px;
     align-items: center;
   } ;

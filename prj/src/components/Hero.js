@@ -9,7 +9,7 @@ const HeroContainer = styled.div`
   width: 95%;
   height: 350px;
 
-  background: purple;
+  background: whit;
   border-radius: 20px;
 
   @media (min-width: 768px) {
