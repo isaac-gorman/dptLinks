@@ -15,12 +15,14 @@ const Container = styled.div`
   @media (min-width: 768px) {
     width: 50%;
     background: pink;
+    align-items: flex-start;
   }
 
   @media (min-width: 1152px) {
     width: 65%;
     background: blue;
     margin-top: 0px;
+    align-items: center;
   } ;
 `;
 

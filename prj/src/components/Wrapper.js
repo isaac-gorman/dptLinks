@@ -5,11 +5,24 @@ import Hero from "./Hero";
 import StudyLinks from "./StudyLinks";
 import ClassArchive from "./ClassArchive";
 import Contact from "./Contact";
+import Footer from "./Footer";
+
+const Container = styled.div`
+  display: flex;
+  flex-direction: column;
+  // height: 100%;
+`;
+
+// const ResponisveContainer = styled.div`
+//   display: flex;
+//   flex-direction: column;
+//   height: 100%;
+// `;
 
 const ResponsiveSection = styled.div`
   width: 96vw;
   margin: 0 auto;
-  // height: 100vh;
+  // height: 100%;
   background: green;
   display: flex;
   flex-direction: column;
@@ -20,12 +33,11 @@ const ResponsiveSection = styled.div`
     flex-direction: row;
   }
 `;
-
 const SectionA = styled.div`
   width: 100%;
   // margin: 0 auto;
-  height: 600px;
-  // background: pink;
+  height: 50%;
+  background: pink;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -36,14 +48,19 @@ const SectionA = styled.div`
     // background: pink;
     width: 60vw;
     margin-top: 0px;
+    height: 600px;
+  }
+
+  @media (min-width: 1280px) {
+    height: 90%;
   }
 `;
 const SectionB = styled.div`
   width: 100%;
-  height: 600px;
+  height: 50%;
   // margin: 0 auto;
 
-  // background: lightblue;
+  background: lightblue;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -62,13 +79,23 @@ const SectionB = styled.div`
     flex-direction: column;
     overflow: hidden;
     overflow-y: scroll;
-  } ;
+    height: 600px;
+  }
+
+  @media (min-height: 800px) {
+    height: 50vw;
+  }
+
+  @media (min-height: 950px) {
+    height: 60vw;
+  }
 `;
 
 function Wrapper() {
   return (
-    <>
+    <Container>
       <Header />
+      {/* <ResponisveContainer> */}
       <ResponsiveSection>
         <SectionA>
           <Hero />
@@ -79,7 +106,10 @@ function Wrapper() {
           <Contact />
         </SectionB>
       </ResponsiveSection>
-    </>
+      {/* </ResponisveContainer> */}
+
+      <Footer />
+    </Container>
   );
 }
 

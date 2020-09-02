@@ -11,7 +11,7 @@ const Container = styled.div`
 `;
 const Heading = styled.h3`
   font-size: 18px;
-  width: 90%;
+  // width: 90%;
   margin: 0 auto;
 `;
 const CarouselConatiner = styled.div`

@@ -7,9 +7,9 @@ import fc from "./fc.svg";
 
 const HeroContainer = styled.div`
   width: 95%;
-  height: 50%;
+  height: 350px;
 
-  background: white;
+  background: purple;
   border-radius: 20px;
 
   @media (min-width: 768px) {
