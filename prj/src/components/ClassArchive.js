@@ -4,7 +4,7 @@ import CA from "./CA.svg";
 
 const Container = styled.div`
   width: 100%;
-  height: 400px;
+  // height: 400px;
   margin: 0 auto;
   margin-top: 60px;
   margin-bottom: 100px;
@@ -42,7 +42,7 @@ const Heading = styled.h3`
 
 const Card = styled.div`
   width: 90%;
-  height: 460px;
+  height: 400px;
   background: white;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   border-radius: 10px;
