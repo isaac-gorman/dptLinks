@@ -212,8 +212,8 @@ function Contact() {
           <RoleSection>
             <DirectionsTitle>How to get intouch </DirectionsTitle>
             <Directions>
-              Email me if you have any question or concerns regardinding photos
-              and video. Thanks, Jasmine.
+              Email me if you have any question or concerns regarding photos and
+              video. Thanks, Jasmine.
             </Directions>
             <Divider />
           </RoleSection>
