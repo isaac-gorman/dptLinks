@@ -10,10 +10,17 @@ const Container = styled.div`
   justify-content: center;
   align-items: center;
 
-  // position: relative;
-  // bottom: 0;
-  // left: 0;
-  // right: 0;
+  @media (min-height: 800px) {
+    height: 75px;
+  }
+
+  @media (min-height: 900px) {
+    height: 95px;
+  }
+
+  @media (min-height: 1000px) {
+    margin-top: 20px;
+  }
 `;
 
 const ContentDiv = styled.div`

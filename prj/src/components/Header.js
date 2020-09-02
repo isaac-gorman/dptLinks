@@ -17,6 +17,14 @@ const HeaderContainer = styled.div`
     background: #e5e5e5;
     margin-bottom: 0px;
   }
+
+  @media (min-height: 800px) {
+    height: 85px;
+  }
+
+  @media (min-height: 900px) {
+    height: 95px;
+  }
 `;
 
 const Logo = styled.p`

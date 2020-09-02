@@ -54,6 +54,10 @@ const SectionA = styled.div`
   @media (min-width: 1280px) {
     height: 90%;
   }
+
+  @media (min-width: 1500px) {
+    width: 60vw;
+  }
 `;
 const SectionB = styled.div`
   width: 100%;
@@ -82,12 +86,27 @@ const SectionB = styled.div`
     height: 600px;
   }
 
-  @media (min-height: 800px) {
+  @media (min-width: 1280px) {
     height: 50vw;
   }
 
   @media (min-height: 950px) {
-    height: 60vw;
+    // height: 60vh;
+  }
+
+  @media (min-width: 1440px) {
+    // height: 80vh;
+    width: 40vw;
+  }
+
+  @media (min-width: 1500px) {
+    height: 80vh;
+    // width: 40vw;
+  }
+
+  @media (min-height: 950px) {
+    height: 80vh;
+    // width: 40vw;
   }
 `;
 
