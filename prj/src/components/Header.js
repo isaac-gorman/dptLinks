@@ -9,6 +9,14 @@ const HeaderContainer = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: center;
+
+  @media (min-width: 1152px) {
+    text-align: left;
+    font-size: 14px;
+    height: 120px;
+    background: #e5e5e5;
+    margin-bottom: 0px;
+  }
 `;
 
 const Logo = styled.h3`

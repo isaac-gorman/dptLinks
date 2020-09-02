@@ -4,12 +4,13 @@ import Header from "./Header";
 import Hero from "./Hero";
 import StudyLinks from "./StudyLinks";
 import ClassArchive from "./ClassArchive";
+import Contact from "./Contact";
 
 const ResponsiveSection = styled.div`
   width: 96vw;
   margin: 0 auto;
-  height: 100vh;
-  // background: #e5e5e5;
+  // height: 100vh;
+  background: green;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -34,6 +35,7 @@ const SectionA = styled.div`
     align-items: flex-start;
     // background: pink;
     width: 60vw;
+    margin-top: 0px;
   }
 `;
 const SectionB = styled.div`
@@ -57,6 +59,9 @@ const SectionB = styled.div`
   @media (min-width: 1152px) {
     // width: 65%;
     background: grey;
+    flex-direction: column;
+    overflow: hidden;
+    overflow-y: scroll;
   } ;
 `;
 
@@ -71,6 +76,7 @@ function Wrapper() {
         </SectionA>
         <SectionB>
           <ClassArchive />
+          <Contact />
         </SectionB>
       </ResponsiveSection>
     </>
