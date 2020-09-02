@@ -28,6 +28,9 @@ const HeroImage = styled.img`
 
 const Heading = styled.h3`
   font-size: 24px;
+  font-family: "airbnb_cereal_appbook";
+  font-style: normal;
+
   margin-bottom: 0;
   margin-top: 20px;
   position: relative;
@@ -35,7 +38,6 @@ const Heading = styled.h3`
   left: 24px;
   color: black;
   width: 80%;
-  font-weight: bold;
 
   @media (min-width: 768px) {
     top: -280px;
@@ -47,6 +49,10 @@ const Heading = styled.h3`
 
 const Description = styled.p`
   font-size: 16px;
+  font-family: "airbnb_cereal_appbook";
+  font-style: normal;
+  font-weight: normal;
+
   position: relative;
   top: -160px;
   left: 24px;

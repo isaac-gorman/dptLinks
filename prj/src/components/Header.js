@@ -10,6 +10,7 @@ const HeaderContainer = styled.div`
   flex-direction: column;
   justify-content: center;
   border-bottom: 0.1px solid #e6e6e6;
+  margin-bottom: 10px;
 
   @media (min-width: 1152px) {
     text-align: left;
@@ -33,6 +34,9 @@ const HeaderContainer = styled.div`
 `;
 
 const Logo = styled.p`
+  font-family: "airbnb_cereal_applight";
+  font-style: normal;
+  font-weight: 300;
   font-size: 14px;
   line-height: 16px;
   text-align: center;
@@ -44,7 +48,8 @@ const Logo = styled.p`
 `;
 
 const Bold = styled.span`
-  font-weight: bold;
+  font-family: "airbnb_cereal_appbold";
+  font-style: normal;
 `;
 
 function Header() {

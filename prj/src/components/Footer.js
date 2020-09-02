@@ -14,6 +14,10 @@ const Container = styled.div`
   justify-content: center;
   align-items: center;
 
+  @media (min-width: 768px) {
+    height: 60px;
+  }
+
   @media (min-height: 800px) {
     height: 75px;
   }
@@ -31,6 +35,7 @@ const ContentDiv = styled.div`
   width: 90%;
   height: 22px;
 
+  marign: 0px;
   // background: yellow;
   display: flex;
   align-items: center;
@@ -50,6 +55,9 @@ const LogoDiv = styled.div`
 
 const Logo = styled.p`
   font-size: 14px;
+  font-family: "airbnb_cereal_applight";
+  font-style: normal;
+  font-weight: 300;
   // line-height: 16px;
   text-align: center;
   margin-top: 0px;
@@ -65,6 +73,8 @@ const Logo = styled.p`
 
 const Bold = styled.span`
   font-weight: bold;
+  font-family: "airbnb_cereal_appbold";
+  font-style: normal;
 `;
 
 const SocialDiv = styled.div`

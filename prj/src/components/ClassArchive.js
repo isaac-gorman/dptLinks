@@ -31,6 +31,10 @@ const Container = styled.div`
 
 const Heading = styled.h3`
   font-size: 18px;
+
+  font-family: "airbnb_cereal_appbook";
+  font-style: normal;
+  // font-weight: normal;
   margin-left: 6px;
   text-align: left;
   width: 90%;
@@ -70,6 +74,9 @@ const TextDiv = styled.div`
 
 const Title = styled.h3`
   font-size: 16px;
+  font-family: "airbnb_cereal_appbook";
+  font-style: normal;
+  // font-weight: normal;
   // margin-left: 6px;
   text-align: left;
   width: 100%;
@@ -78,15 +85,21 @@ const Title = styled.h3`
 `;
 const LinkDestination = styled.p`
   font-size: 16px;
+  font-family: "airbnb_cereal_appbook";
+  font-style: normal;
+  font-weight: normal;
   // margin-left: 6px;
   text-align: left;
   width: 100%;
   margin-top: 0px;
-  margin-bottom: 24px;
+  margin-bottom: 8px;
 `;
 
 const Description = styled.p`
-  font-size: 14px;
+  font-size: 16px;
+  font-family: "airbnb_cereal_appbook";
+  font-style: normal;
+  font-weight: normal;
   // // margin-left: 6px;
   // text-align: left;
   // width: 100%;

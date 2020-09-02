@@ -33,6 +33,9 @@ const Container = styled.div`
 
 const Heading = styled.h3`
   font-size: 18px;
+  font-family: "airbnb_cereal_appbook";
+  font-style: normal;
+  // font-weight: normal;
   margin-left: 6px;
   text-align: left;
   width: 90%;
@@ -70,12 +73,18 @@ const InfoDiv = styled.div`
 
 const Responsibility = styled.h3`
   font-size: 16px;
+  font-family: "airbnb_cereal_appbook";
+  font-style: normal;
+  // font-weight: normal;
   margin-top: 0px;
   margin-bottom: 0px;
 `;
 
 const Name = styled.p`
   font-size: 14px;
+  font-family: "airbnb_cereal_appbook";
+  font-style: normal;
+  font-weight: normal;
   margin-top: 0px;
   margin-bottom: 0px;
 `;
@@ -112,6 +121,9 @@ const RoleDiv = styled.div`
 
 const Role = styled.h3`
   font-size: 14px;
+  font-family: "airbnb_cereal_appbook";
+  font-style: normal;
+  // font-weight: normal;
   margin-top: 0px;
   margin-bottom: 0px;
   margin-right: 10px;
@@ -119,6 +131,9 @@ const Role = styled.h3`
 
 const RoleName = styled.p`
   font-size: 14px;
+  font-family: "airbnb_cereal_appbook";
+  font-style: normal;
+  font-weight: normal;
   margin-top: 0px;
   margin-bottom: 0px;
 `;
@@ -133,12 +148,18 @@ const Divider = styled.div`
 
 const DirectionsTitle = styled.h3`
   font-size: 14px;
+  font-family: "airbnb_cereal_appbook";
+  font-style: normal;
+
   margin-top: 0px;
   margin-bottom: 8px;
 `;
 
 const Directions = styled.p`
   font-size: 14px;
+  font-family: "airbnb_cereal_appbook";
+  font-style: normal;
+  font-weight: normal;
   margin-top: 0px;
   margin-bottom: 0px;
 `;
@@ -156,6 +177,9 @@ const EmailIcon = styled.img`
 
 const Email = styled.p`
   font-size: 14px;
+  font-family: "airbnb_cereal_appbook";
+  font-style: normal;
+  // font-weight: normal;
   margin-top: 0px;
   margin-bottom: 0px;
   text-decoration: underline;
