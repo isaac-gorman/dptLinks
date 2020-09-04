@@ -18,28 +18,32 @@ const StudyLinksData = [
     title: "Lab Photos",
     image: LP,
     destination: "Google Drive",
-    url: "https://www.google.com/drive/",
+    url:
+      "https://drive.google.com/drive/folders/1Hbvt9EH3pdnkbAtDCHZ9HzPPv3fwhXyS?usp=sharing",
   },
   {
     id: 2,
-    title: "School Calander",
+    title: "Weekly Due Dates",
     image: SC,
-    destination: "Google Calander",
-    url: "https://www.google.com/calendar/about/",
+    destination: "Google Drive",
+    url:
+      "https://docs.google.com/spreadsheets/d/1U8uzsa3fb48iXt9DbXRN-x0pK84Ng_Ay1YghTbjtyXE/edit?usp=sharing",
   },
   {
     id: 3,
     title: "Student Made Material",
     image: SMM,
     destination: "Google Drive",
-    url: "https://www.google.com/drive/",
+    url:
+      "https://drive.google.com/drive/folders/1oo1k70ZAxX_4GewprkGdTlO9CjsDq3BI?usp=sharing",
   },
   {
     id: 4,
     title: "Textbooks",
     image: TB,
     destination: "Google Drive",
-    url: "https://www.google.com/drive/",
+    url:
+      "https://drive.google.com/drive/folders/1g24DK9SNwZMbnKwpMBt3gAJ-iGR5jqzT?usp=sharing",
   },
   {
     id: 5,
@@ -47,7 +51,7 @@ const StudyLinksData = [
     image: LR,
     destination: "Microsoft Teams",
     url:
-      "https://www.microsoft.com/en-us/microsoft-365/microsoft-teams/group-chat-software?&ef_id=Cj0KCQjwhb36BRCfARIsAKcXh6G3-X2dJWVIT68xyJlDm4i5Rba8A0VpQ0SHOWNGhUOfv2TK0Yj88LwaAuH4EALw_wcB:G:s&OCID=AID2100233_SEM_Cj0KCQjwhb36BRCfARIsAKcXh6G3-X2dJWVIT68xyJlDm4i5Rba8A0VpQ0SHOWNGhUOfv2TK0Yj88LwaAuH4EALw_wcB:G:s&gclid=Cj0KCQjwhb36BRCfARIsAKcXh6G3-X2dJWVIT68xyJlDm4i5Rba8A0VpQ0SHOWNGhUOfv2TK0Yj88LwaAuH4EALw_wcB",
+      "https://uthealthsa.sharepoint.com/teams/DPTClassof2023/Class%20Materials/Fall%202020",
   },
 ];
 

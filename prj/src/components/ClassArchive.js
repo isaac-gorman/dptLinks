@@ -156,7 +156,10 @@ function ClassArchive() {
             our class graduation slideshow.
           </Description>
 
-          <AppLink href="https://www.google.com/drive/" target="_blank">
+          <AppLink
+            href="https://drive.google.com/drive/folders/1OQbx7Gw3064-bAxTHIgQ0dRQuNQSrK5W?usp=sharing"
+            target="_blank"
+          >
             <Button>Go to Archive</Button>
           </AppLink>
         </TextDiv>

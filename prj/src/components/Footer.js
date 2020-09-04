@@ -137,11 +137,17 @@ function Footer() {
           </Logo>
         </LogoDiv>
         <SocialDiv>
-          <AppLink href="https://www.facebook.com/" target="_blank">
+          <AppLink
+            href="https://www.facebook.com/groups/2419696158283210/?epa=SEARCH_BOX"
+            target="_blank"
+          >
             <FBIcon src={FB} alt="Facebook icon" />
           </AppLink>
 
-          <AppLink href="https://www.instagram.com/" target="_blank">
+          <AppLink
+            href="https://www.instagram.com/uthealthsa_dpt2023/"
+            target="_blank"
+          >
             <IGIcon src={IG} alt="Instagram icon" />
           </AppLink>
         </SocialDiv>
