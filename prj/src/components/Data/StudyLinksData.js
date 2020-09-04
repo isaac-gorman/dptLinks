@@ -18,7 +18,8 @@ const StudyLinksData = [
     title: "Lab Photos",
     image: LP,
     destination: "Google Drive",
-    url: "https://www.google.com/drive/",
+    url:
+      "https://drive.google.com/drive/folders/1Hbvt9EH3pdnkbAtDCHZ9HzPPv3fwhXyS?usp=sharing",
   },
   {
     id: 2,
