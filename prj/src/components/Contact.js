@@ -213,7 +213,7 @@ function Contact() {
             <DirectionsTitle>How to get intouch </DirectionsTitle>
             <Directions>
               Email me if you have any question or concerns regarding photos and
-              video. Thanks, Jasmine.
+              videos. Thanks, Jasmine.
             </Directions>
             <Divider />
           </RoleSection>

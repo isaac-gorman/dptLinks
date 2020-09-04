@@ -32,14 +32,15 @@ const StudyLinksData = [
     title: "Student Made Material",
     image: SMM,
     destination: "Google Drive",
-    url: "https://www.google.com/drive/",
+    url: "",
   },
   {
     id: 4,
     title: "Textbooks",
     image: TB,
     destination: "Google Drive",
-    url: "https://www.google.com/drive/",
+    url:
+      "https://drive.google.com/drive/folders/1g24DK9SNwZMbnKwpMBt3gAJ-iGR5jqzT?usp=sharing",
   },
   {
     id: 5,
