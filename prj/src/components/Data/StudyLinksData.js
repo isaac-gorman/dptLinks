@@ -11,7 +11,7 @@ const StudyLinksData = [
     title: "Lab Videos",
     image: LV,
     destination: "Youtube",
-    url: "https://www.youtube.com/",
+    url: "https://www.youtube.com/channel/UCsEPqHmrZvByvJc3G-RwHoA/playlists",
   },
   {
     id: 1,
