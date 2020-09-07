@@ -1,5 +1,7 @@
 import React from "react";
 import styled from "styled-components";
+// import "./.css";
+// import { ReactComponent as FB } from "./FB.svg";
 import FB from "./FB.svg";
 import IG from "./IG.svg";
 
@@ -89,11 +91,11 @@ const SocialDiv = styled.div`
 const FBIcon = styled.img`
   width: 20px;
   height: 20px;
-  fill: #9ab8e9;
+  fill: #4285f4;
   &:hover {
     border-radius: 20px;
     background: #4285f4;
-    // fill: #9ab8e9;
+    fill: black;
   }
 
   @media (min-height: 800px) {

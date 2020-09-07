@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import styled from "styled-components";
 import JG from "./JG.svg";
 import M from "./M.svg";
@@ -45,18 +45,32 @@ const Card = styled.div`
   width: 90%;
   height: 380px;
   background: white;
-  box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.25), 0px 3px 4px rgba(0, 0, 0, 0.25);
+  border: 0.1px solid #e6e6e6;
   border-radius: 10px;
 
   display: flex;
   flex-direction: column;
   align-items: center;
+
+  transition: transform 0.2s;
+
+  &:hover {
+    border: none;
+    // -ms-transform: scale(1.025); /* IE 9 */
+    // -webkit-transform: scale(1.025); /* Safari 3-8 */
+    transform: scale(1.025);
+    box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.25), 0px 3px 4px rgba(0, 0, 0, 0.25);
+  }
+
+  &:active {
+    background-color: #f6f8fa;
+  }
 `;
 
 const TitleDiv = styled.div`
   height: 60px;
   width: 90%;
-  // background: pink;
+  // background: green;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -185,45 +199,98 @@ const Email = styled.p`
   text-decoration: underline;
 `;
 
+const PreviewCard = styled.div`
+  width: 90%;
+  height: 120px;
+  // background: pink;
+  border: 0.1px solid #e6e6e6;
+  border-radius: 10px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  // margin-bottom: 20px;
+  transition: transform 0.2s;
+
+  &:hover {
+    border: none;
+    // -ms-transform: scale(1.025); /* IE 9 */
+    // -webkit-transform: scale(1.025); /* Safari 3-8 */
+    transform: scale(1.025);
+    box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.25), 0px 3px 4px rgba(0, 0, 0, 0.25);
+  }
+
+  &:active {
+    background-color: #f6f8fa;
+  }
+`;
+
+const PreviewTitleDiv = styled.div`
+  height: 60px;
+  width: 90%;
+  // background: green;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  // margin-top: 30px;
+`;
+
 function Contact() {
+  const [active, setActive] = useState(false);
+
   return (
     <Container>
-      <Heading>Contact</Heading>
-      <Card>
-        <TitleDiv>
-          <InfoDiv>
-            <Responsibility>Photos & Videos</Responsibility>
-            <Name>Jasmine Gongora</Name>
-          </InfoDiv>
-          <ImageDiv>
-            <Image src={JG} alt="Lab-A Historian Jasmine G" />
-          </ImageDiv>
-        </TitleDiv>
+      <Heading>Contacts</Heading>
+      {active ? (
+        <Card onClick={() => setActive(!active)}>
+          <TitleDiv>
+            <InfoDiv>
+              <Responsibility>Historian Lab A</Responsibility>
+              <Name>Jasmine Gongora</Name>
+            </InfoDiv>
+            <ImageDiv>
+              <Image src={JG} alt="Lab-A Historian Jasmine G" />
+            </ImageDiv>
+          </TitleDiv>
 
-        <DetailsDiv>
-          <RoleSection>
-            <RoleDiv>
-              <Role>Role</Role>
-              <RoleName>Historian Lab A</RoleName>
-            </RoleDiv>
-            <Divider />
-          </RoleSection>
+          <DetailsDiv>
+            <RoleSection>
+              <RoleDiv>
+                <Role>Role</Role>
+                <RoleName>Archive photos and videos</RoleName>
+              </RoleDiv>
+              <Divider />
+            </RoleSection>
 
-          <RoleSection>
-            <DirectionsTitle>How to get intouch </DirectionsTitle>
-            <Directions>
-              Email me if you have any question or concerns regarding photos and
-              videos. Thanks, Jasmine.
-            </Directions>
-            <Divider />
-          </RoleSection>
+            <RoleSection>
+              <DirectionsTitle>How to get intouch </DirectionsTitle>
+              <Directions>
+                Email me if you have any question or concerns regarding photos
+                and videos. Thanks, Jasmine.
+              </Directions>
+              <Divider />
+            </RoleSection>
 
-          <EmailDiv>
-            <EmailIcon src={M} alt="Email Icon" />
-            <Email>media@dptLinks23.com</Email>
-          </EmailDiv>
-        </DetailsDiv>
-      </Card>
+            <EmailDiv>
+              <EmailIcon src={M} alt="Email Icon" />
+              <Email>media@dptLinks23.com</Email>
+            </EmailDiv>
+          </DetailsDiv>
+        </Card>
+      ) : (
+        <PreviewCard onClick={() => setActive(!active)}>
+          <PreviewTitleDiv>
+            <InfoDiv>
+              <Responsibility>Historian Lab A</Responsibility>
+              <Name>Jasmine Gongora</Name>
+            </InfoDiv>
+            <ImageDiv>
+              <Image src={JG} alt="Lab-A Historian Jasmine G" />
+            </ImageDiv>
+          </PreviewTitleDiv>
+        </PreviewCard>
+      )}
     </Container>
   );
 }
