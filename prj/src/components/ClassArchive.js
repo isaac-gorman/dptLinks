@@ -44,8 +44,18 @@ const Card = styled.div`
   width: 90%;
   height: 400px;
   background: white;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   border-radius: 10px;
+  border: 0.1px solid #e6e6e6;
+
+  transition: transform 0.2s;
+
+  &:hover {
+    border: none;
+    // -ms-transform: scale(1.025); /* IE 9 */
+    // -webkit-transform: scale(1.025); /* Safari 3-8 */
+    transform: scale(1.025);
+    box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.25), 0px 3px 4px rgba(0, 0, 0, 0.25);
+  }
 `;
 
 const ImageContainer = styled.div`
