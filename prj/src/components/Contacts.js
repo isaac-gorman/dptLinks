@@ -6,7 +6,7 @@ import ContactsData from "./Data/ContactsData";
 
 const Container = styled.div`
   width: 100%;
-  height: 400px;
+  height: auto;
   margin: 0 auto;
   margin-top: 60px;
   margin-bottom: 60px;
@@ -48,7 +48,8 @@ const Card = styled.div`
   background: white;
   border: 0.1px solid #e6e6e6;
   border-radius: 10px;
-
+  margin-top: 10px;
+  margin-bottom: 10px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -107,8 +108,9 @@ const Name = styled.p`
 const ImageDiv = styled.div`
   width: 50px;
   height: 50px;
-  color: lightblue;
+  // color: lightblue;
   border-radius: 40px;
+  background-color: blue;
 `;
 
 const Image = styled.img`
@@ -116,6 +118,8 @@ const Image = styled.img`
   height: 100%;
   object-fit: none;
   border-radius: 40px;
+  background: black;
+  fill: white;
 `;
 
 const DetailsDiv = styled.div`
@@ -206,6 +210,8 @@ const PreviewCard = styled.div`
   // background: pink;
   border: 0.1px solid #e6e6e6;
   border-radius: 10px;
+  margin-top: 10px;
+  margin-bottom: 10px;
 
   display: flex;
   flex-direction: column;
@@ -238,20 +244,26 @@ const PreviewTitleDiv = styled.div`
 `;
 
 function Contact() {
-  const [active, setActive] = useState(false);
+  const [activeJJ, setActiveJJ] = useState(false);
+  const [activeK, setActiveK] = useState(false);
+  const [activeM, setActiveM] = useState(false);
+  const [activeR, setActiveR] = useState(false);
+  const [activeB, setActiveB] = useState(false);
+  const [activeJ, setActiveJ] = useState(false);
+  const [activeG, setActiveG] = useState(false);
 
   return (
     <Container>
       <Heading>Contacts</Heading>
-      {active ? (
-        <Card onClick={() => setActive(!active)}>
+      {activeJJ ? (
+        <Card onClick={() => setActiveJJ(!activeJJ)}>
           <TitleDiv>
             <InfoDiv>
-              <Responsibility>Historian Lab A</Responsibility>
-              <Name>Jasmine Gongora</Name>
+              <Responsibility>{ContactsData.jj.role}</Responsibility>
+              <Name>{ContactsData.jj.name}</Name>
             </InfoDiv>
             <ImageDiv>
-              <Image src="" alt="Lab-A Historian Jasmine G" />
+              <Image src={ContactsData.jj.image} alt="Tresurer jj " />
             </ImageDiv>
           </TitleDiv>
 
@@ -259,35 +271,335 @@ function Contact() {
             <RoleSection>
               <RoleDiv>
                 <Role>Role</Role>
-                <RoleName>Archive photos and videos</RoleName>
+                <RoleName>{ContactsData.jj.role_description}</RoleName>
               </RoleDiv>
               <Divider />
             </RoleSection>
 
             <RoleSection>
               <DirectionsTitle>How to get intouch </DirectionsTitle>
-              <Directions>
-                Email me if you have any question or concerns regarding photos
-                and videos. Thanks, Jasmine.
-              </Directions>
+              <Directions>{ContactsData.jj.directions}</Directions>
               <Divider />
             </RoleSection>
 
             <EmailDiv>
               <EmailIcon src={M} alt="Email Icon" />
-              <Email>media@dptLinks23.com</Email>
+              <Email>{ContactsData.jj.email}</Email>
             </EmailDiv>
           </DetailsDiv>
         </Card>
       ) : (
-        <PreviewCard onClick={() => setActive(!active)}>
+        <PreviewCard onClick={() => setActiveJJ(!activeJJ)}>
           <PreviewTitleDiv>
             <InfoDiv>
-              <Responsibility>Historian Lab A</Responsibility>
-              <Name>Jasmine Gongora</Name>
+              <Responsibility>{ContactsData.jj.role}</Responsibility>
+              <Name>{ContactsData.jj.name}</Name>
             </InfoDiv>
             <ImageDiv>
-              <Image src="" alt="Lab-A Historian Jasmine G" />
+              <Image src={ContactsData.jj.image} alt="Lab-A Historian jj" />
+            </ImageDiv>
+          </PreviewTitleDiv>
+        </PreviewCard>
+      )}
+      {activeK ? (
+        <Card onClick={() => setActiveK(!activeK)}>
+          <TitleDiv>
+            <InfoDiv>
+              <Responsibility>{ContactsData.kaliea.role}</Responsibility>
+              <Name>{ContactsData.kaliea.name}</Name>
+            </InfoDiv>
+            <ImageDiv>
+              <Image src={ContactsData.kaliea.image} alt="Tresurer kaliea " />
+            </ImageDiv>
+          </TitleDiv>
+
+          <DetailsDiv>
+            <RoleSection>
+              <RoleDiv>
+                <Role>Role</Role>
+                <RoleName>{ContactsData.kaliea.role_description}</RoleName>
+              </RoleDiv>
+              <Divider />
+            </RoleSection>
+
+            <RoleSection>
+              <DirectionsTitle>How to get intouch </DirectionsTitle>
+              <Directions>{ContactsData.kaliea.directions}</Directions>
+              <Divider />
+            </RoleSection>
+
+            <EmailDiv>
+              <EmailIcon src={M} alt="Email Icon" />
+              <Email>{ContactsData.kaliea.email}</Email>
+            </EmailDiv>
+          </DetailsDiv>
+        </Card>
+      ) : (
+        <PreviewCard onClick={() => setActiveK(!activeK)}>
+          <PreviewTitleDiv>
+            <InfoDiv>
+              <Responsibility>{ContactsData.kaliea.role}</Responsibility>
+              <Name>{ContactsData.kaliea.name}</Name>
+            </InfoDiv>
+            <ImageDiv>
+              <Image
+                src={ContactsData.kaliea.image}
+                alt="Lab-A Historian kaliea"
+              />
+            </ImageDiv>
+          </PreviewTitleDiv>
+        </PreviewCard>
+      )}
+      {activeM ? (
+        <Card onClick={() => setActiveM(!activeM)}>
+          <TitleDiv>
+            <InfoDiv>
+              <Responsibility>{ContactsData.maddy.role}</Responsibility>
+              <Name>{ContactsData.maddy.name}</Name>
+            </InfoDiv>
+            <ImageDiv>
+              <Image src={ContactsData.maddy.image} alt="Tresurer Maddy " />
+            </ImageDiv>
+          </TitleDiv>
+
+          <DetailsDiv>
+            <RoleSection>
+              <RoleDiv>
+                <Role>Role</Role>
+                <RoleName>{ContactsData.maddy.role_description}</RoleName>
+              </RoleDiv>
+              <Divider />
+            </RoleSection>
+
+            <RoleSection>
+              <DirectionsTitle>How to get intouch </DirectionsTitle>
+              <Directions>{ContactsData.maddy.directions}</Directions>
+              <Divider />
+            </RoleSection>
+
+            <EmailDiv>
+              <EmailIcon src={M} alt="Email Icon" />
+              <Email>{ContactsData.maddy.email}</Email>
+            </EmailDiv>
+          </DetailsDiv>
+        </Card>
+      ) : (
+        <PreviewCard onClick={() => setActiveM(!activeM)}>
+          <PreviewTitleDiv>
+            <InfoDiv>
+              <Responsibility>{ContactsData.maddy.role}</Responsibility>
+              <Name>{ContactsData.maddy.name}</Name>
+            </InfoDiv>
+            <ImageDiv>
+              <Image
+                src={ContactsData.maddy.image}
+                alt="Lab-A Historian Maddy"
+              />
+            </ImageDiv>
+          </PreviewTitleDiv>
+        </PreviewCard>
+      )}
+      {activeR ? (
+        <Card onClick={() => setActiveR(!activeR)}>
+          <TitleDiv>
+            <InfoDiv>
+              <Responsibility>{ContactsData.robert.role}</Responsibility>
+              <Name>{ContactsData.robert.name}</Name>
+            </InfoDiv>
+            <ImageDiv>
+              <Image src={ContactsData.robert.image} alt="Tresurer Robert " />
+            </ImageDiv>
+          </TitleDiv>
+
+          <DetailsDiv>
+            <RoleSection>
+              <RoleDiv>
+                <Role>Role</Role>
+                <RoleName>{ContactsData.robert.role_description}</RoleName>
+              </RoleDiv>
+              <Divider />
+            </RoleSection>
+
+            <RoleSection>
+              <DirectionsTitle>How to get intouch </DirectionsTitle>
+              <Directions>{ContactsData.robert.directions}</Directions>
+              <Divider />
+            </RoleSection>
+
+            <EmailDiv>
+              <EmailIcon src={M} alt="Email Icon" />
+              <Email>{ContactsData.robert.email}</Email>
+            </EmailDiv>
+          </DetailsDiv>
+        </Card>
+      ) : (
+        <PreviewCard onClick={() => setActiveR(!activeR)}>
+          <PreviewTitleDiv>
+            <InfoDiv>
+              <Responsibility>{ContactsData.robert.role}</Responsibility>
+              <Name>{ContactsData.robert.name}</Name>
+            </InfoDiv>
+            <ImageDiv>
+              <Image
+                src={ContactsData.robert.image}
+                alt="Lab-A Historian Robert"
+              />
+            </ImageDiv>
+          </PreviewTitleDiv>
+        </PreviewCard>
+      )}
+      {activeB ? (
+        <Card onClick={() => setActiveB(!activeB)}>
+          <TitleDiv>
+            <InfoDiv>
+              <Responsibility>{ContactsData.brianna.role}</Responsibility>
+              <Name>{ContactsData.brianna.name}</Name>
+            </InfoDiv>
+            <ImageDiv>
+              <Image
+                src={ContactsData.brianna.image}
+                alt="Lab-A Historian Brianna "
+              />
+            </ImageDiv>
+          </TitleDiv>
+
+          <DetailsDiv>
+            <RoleSection>
+              <RoleDiv>
+                <Role>Role</Role>
+                <RoleName>{ContactsData.brianna.role_description}</RoleName>
+              </RoleDiv>
+              <Divider />
+            </RoleSection>
+
+            <RoleSection>
+              <DirectionsTitle>How to get intouch </DirectionsTitle>
+              <Directions>{ContactsData.brianna.directions}</Directions>
+              <Divider />
+            </RoleSection>
+
+            <EmailDiv>
+              <EmailIcon src={M} alt="Email Icon" />
+              <Email>{ContactsData.brianna.email}</Email>
+            </EmailDiv>
+          </DetailsDiv>
+        </Card>
+      ) : (
+        <PreviewCard onClick={() => setActiveB(!activeB)}>
+          <PreviewTitleDiv>
+            <InfoDiv>
+              <Responsibility>{ContactsData.brianna.role}</Responsibility>
+              <Name>{ContactsData.brianna.name}</Name>
+            </InfoDiv>
+            <ImageDiv>
+              <Image
+                src={ContactsData.brianna.image}
+                alt="Lab-A Historian Brianna"
+              />
+            </ImageDiv>
+          </PreviewTitleDiv>
+        </PreviewCard>
+      )}
+      {activeJ ? (
+        <Card onClick={() => setActiveJ(!activeJ)}>
+          <TitleDiv>
+            <InfoDiv>
+              <Responsibility>{ContactsData.jasmine.role}</Responsibility>
+              <Name>{ContactsData.jasmine.name}</Name>
+            </InfoDiv>
+            <ImageDiv>
+              <Image
+                src={ContactsData.jasmine.image}
+                alt="Lab-A Historian Jasmine G"
+              />
+            </ImageDiv>
+          </TitleDiv>
+
+          <DetailsDiv>
+            <RoleSection>
+              <RoleDiv>
+                <Role>Role</Role>
+                <RoleName>{ContactsData.jasmine.role_description}</RoleName>
+              </RoleDiv>
+              <Divider />
+            </RoleSection>
+
+            <RoleSection>
+              <DirectionsTitle>How to get intouch </DirectionsTitle>
+              <Directions>{ContactsData.jasmine.directions}</Directions>
+              <Divider />
+            </RoleSection>
+
+            <EmailDiv>
+              <EmailIcon src={M} alt="Email Icon" />
+              <Email>{ContactsData.jasmine.email}</Email>
+            </EmailDiv>
+          </DetailsDiv>
+        </Card>
+      ) : (
+        <PreviewCard onClick={() => setActiveJ(!activeJ)}>
+          <PreviewTitleDiv>
+            <InfoDiv>
+              <Responsibility>{ContactsData.jasmine.role}</Responsibility>
+              <Name>{ContactsData.jasmine.name}</Name>
+            </InfoDiv>
+            <ImageDiv>
+              <Image
+                src={ContactsData.jasmine.image}
+                alt="Lab-A Historian Jasmine G"
+              />
+            </ImageDiv>
+          </PreviewTitleDiv>
+        </PreviewCard>
+      )}
+      {activeG ? (
+        <Card onClick={() => setActiveG(!activeG)}>
+          <TitleDiv>
+            <InfoDiv>
+              <Responsibility>{ContactsData.gabrielle.role}</Responsibility>
+              <Name>{ContactsData.gabrielle.name}</Name>
+            </InfoDiv>
+            <ImageDiv>
+              <Image
+                src={ContactsData.gabrielle.image}
+                alt="Lab-A Historian gabrielle G"
+              />
+            </ImageDiv>
+          </TitleDiv>
+
+          <DetailsDiv>
+            <RoleSection>
+              <RoleDiv>
+                <Role>Role</Role>
+                <RoleName>{ContactsData.gabrielle.role_description}</RoleName>
+              </RoleDiv>
+              <Divider />
+            </RoleSection>
+
+            <RoleSection>
+              <DirectionsTitle>How to get intouch </DirectionsTitle>
+              <Directions>{ContactsData.gabrielle.directions}</Directions>
+              <Divider />
+            </RoleSection>
+
+            <EmailDiv>
+              <EmailIcon src={M} alt="Email Icon" />
+              <Email>{ContactsData.gabrielle.email}</Email>
+            </EmailDiv>
+          </DetailsDiv>
+        </Card>
+      ) : (
+        <PreviewCard onClick={() => setActiveG(!activeG)}>
+          <PreviewTitleDiv>
+            <InfoDiv>
+              <Responsibility>{ContactsData.gabrielle.role}</Responsibility>
+              <Name>{ContactsData.gabrielle.name}</Name>
+            </InfoDiv>
+            <ImageDiv>
+              <Image
+                src={ContactsData.gabrielle.image}
+                alt="Lab-A Historian Gabrielle G"
+              />
             </ImageDiv>
           </PreviewTitleDiv>
         </PreviewCard>
