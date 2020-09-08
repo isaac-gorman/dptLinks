@@ -160,17 +160,17 @@ function ClassArchive() {
         </ImageContainer>
         <TextDiv>
           <Title>DPT’23 Media Archive</Title>
-          <LinkDestination>Google Photos</LinkDestination>
+          <LinkDestination>Class Facebook</LinkDestination>
           <Description>
             Upload any content that you capture in and out of the classroom, for
             our class graduation slideshow.
           </Description>
 
           <AppLink
-            href="https://drive.google.com/drive/folders/1OQbx7Gw3064-bAxTHIgQ0dRQuNQSrK5W?usp=sharing"
+            href="https://www.facebook.com/groups/2419696158283210/?epa=SEARCH_BOX"
             target="_blank"
           >
-            <Button>Go to Archive</Button>
+            <Button>Coming Soon</Button>
           </AppLink>
         </TextDiv>
       </Card>
