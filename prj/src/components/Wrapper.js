@@ -4,7 +4,7 @@ import Header from "./Header";
 import Hero from "./Hero";
 import StudyLinks from "./StudyLinks";
 import ClassArchive from "./ClassArchive";
-import Contact from "./Contact";
+import Contacts from "./Contacts";
 import Footer from "./Footer";
 
 const Container = styled.div`
@@ -137,7 +137,7 @@ function Wrapper() {
         </SectionA>
         <SectionB>
           <ClassArchive />
-          <Contact />
+          <Contacts />
         </SectionB>
       </ResponsiveSection>
       {/* </ResponisveContainer> */}

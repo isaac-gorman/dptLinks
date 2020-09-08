@@ -1,7 +1,8 @@
 import React, { useState } from "react";
 import styled from "styled-components";
-import JG from "./JG.svg";
+// import JG from "./JG.svg";
 import M from "./M.svg";
+import ContactsData from "./Data/ContactsData";
 
 const Container = styled.div`
   width: 100%;
@@ -250,7 +251,7 @@ function Contact() {
               <Name>Jasmine Gongora</Name>
             </InfoDiv>
             <ImageDiv>
-              <Image src={JG} alt="Lab-A Historian Jasmine G" />
+              <Image src="" alt="Lab-A Historian Jasmine G" />
             </ImageDiv>
           </TitleDiv>
 
@@ -286,7 +287,7 @@ function Contact() {
               <Name>Jasmine Gongora</Name>
             </InfoDiv>
             <ImageDiv>
-              <Image src={JG} alt="Lab-A Historian Jasmine G" />
+              <Image src="" alt="Lab-A Historian Jasmine G" />
             </ImageDiv>
           </PreviewTitleDiv>
         </PreviewCard>
